@@ -1,6 +1,6 @@
 {
   "name": "stochastic.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A microlibrary for common tasks that involve randomness",
   "main": "stochastic.js",
   "scripts": {
