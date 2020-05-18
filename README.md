@@ -23,6 +23,15 @@ A microlibrary for generating random data.
 
 ## Available Functions
 
+The functions available are as follows, detailed descriptions are provided below.
+- `between`
+- `intBetween`
+- `oneOf`
+- `nOf`
+- `color`
+- `coinflip`
+- `weightedCoinflip`
+
 ### Float Interval
 Use:
 
