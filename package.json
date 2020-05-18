@@ -1,5 +1,5 @@
 {
-  "name": "stochastic.js",
+  "name": "stochastic-js",
   "version": "1.0.0",
   "description": "A microlibrary for common tasks that involve randomness",
   "main": "stochastic.js",
@@ -13,6 +13,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dfclutch/stochastic.js.git"
+    "url": "https://github.com/dfclutch/stochastic-js.git"
   }
 }

@@ -5,14 +5,14 @@ A microlibrary for generating random data.
 ## Use
 #### Install
 `
-    npm install stochastic.js
+    npm install stochastic-js
 `
 
 #### Import
 ```javascript
-    require("stochastic.js"); //old
+    require("stochastic-js"); //old
     
-    import stochastic from "stochastic.js"; //ES6
+    import stochastic from "stochastic-js"; //ES6
 ```
 
 #### Generate values
