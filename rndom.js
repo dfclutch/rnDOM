@@ -1,21 +1,21 @@
-exports = {
+const rndom = {
 	between: (min, max) => {
 		return Math.random() * (max - min) + min
 	},
 
 	intBetween: (min,max) => {
-		return Math.floor(stochastic.between(min,max))
+		return Math.floor(rndom.between(min,max))
 	},
 
 	oneOf: (a) => {
-		return a[stochastic.intBetween(0,a.length)];
+		return a[rndom.intBetween(0,a.length)];
 	},
 
 	nOf: (n, a) => {
 		let indices = [],
 			output = [];
 		while (indices.length < n) {
-			let candidate = stochastic.intBetween(0, a.length);
+			let candidate = rndom.intBetween(0, a.length);
 			if (!indices.includes(candidate)) {
 				indices.push(candidate);
 				output.push(a[candidate]);
@@ -29,23 +29,23 @@ exports = {
 		if (scheme) {
 			switch (scheme) {
 				case "rgb":
-					return stochastic._generateRGB();
+					return rndom._generateRGB();
 				case "hex":
-					return stochastic._generateHEX();
+					return rndom._generateHEX();
 				case "named":
-					return stochastic.oneOf(stochastic._cssColors);
+					return rndom.oneOf(rndom._cssColors);
 			}
 		}
 
-		return stochastic._generateHEX();
+		return rndom._generateHEX();
 	},
 
 	coinflip: () => {
-		return chance.between(0,1) > .5
+		return rndom.between(0,1) > .5
 	},
 	
 	weightedCoinflip: (p) => {
-		return chance.between(0,1) < p;
+		return rndom.between(0,1) < p;
 	},
 	/* 
 
@@ -53,23 +53,23 @@ exports = {
 
 	*/
 	_generateRGB: () => {
-		let r = stochastic.intBetween(0,256),
-			g = stochastic.intBetween(0,256),
-			b = stochastic.intBetween(0,256);
+		let r = rndom.intBetween(0,256),
+			g = rndom.intBetween(0,256),
+			b = rndom.intBetween(0,256);
 		return `rgb(${red},${green},${blue})`;
 	},
 	_generateHEX() {
-		let r1 = stochastic._hexDigit(),
-			r2 = stochastic._hexDigit(),
-			g1 = stochastic._hexDigit(),
-			g2 = stochastic._hexDigit(),
-			b1 = stochastic._hexDigit(),
-			b2 = stochastic._hexDigit();
+		let r1 = rndom._hexDigit(),
+			r2 = rndom._hexDigit(),
+			g1 = rndom._hexDigit(),
+			g2 = rndom._hexDigit(),
+			b1 = rndom._hexDigit(),
+			b2 = rndom._hexDigit();
 		return `#${r1}${r2}${g1}${g2}${b1}${b2}`
 	},
 	_hexDigit: () => {
 		let digits = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F",]
-		return chance.oneOf(digits);
+		return rndom.oneOf(digits);
 	},
 	_cssColors:["AliceBlue",
 				"AntiqueWhite",
@@ -220,3 +220,5 @@ exports = {
 				"Yellow",
 				"YellowGreen"]
 }
+
+export default rndom;

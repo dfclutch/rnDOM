@@ -1,24 +1,24 @@
-# STOCHASTIC.JS
+# rndom
 
 A microlibrary for generating random data.
 
 ## Use
 #### Install
 `
-    npm install stochastic-js
+    npm install rndom
 `
 
 #### Import
 ```javascript
-    require("stochastic-js"); //old
+    let rndom = require("rndom"); //old
     
-    import stochastic from "stochastic-js"; //ES6
+    import rndom from "rndom"; //ES6
 ```
 
 #### Generate values
 ```javascript
     // create a random value between 10 and 20
-    let myRandomNumber = stochastic.between(10, 20);
+    let myRandomNumber = rndom.between(10, 20);
 ```
 
 ## Available Functions
@@ -38,7 +38,7 @@ Use:
 ```javascript
 let min = 10;
 let max = 20;
-stochastic.between(min, max);
+rndom.between(min, max);
 ```
 
 Description: Generates a random float between min and max
@@ -55,7 +55,7 @@ Use:
 ```javascript
 let min = 10;
 let max = 20;
-stochastic.intBetween(min, max);
+rndom.intBetween(min, max);
 ```
 
 
@@ -74,7 +74,7 @@ Use:
 
 ```javascript
 let a = [1,2,3];
-stochastic.oneOf(a);
+rndom.oneOf(a);
 ```
 
 Description:
@@ -95,7 +95,7 @@ Use:
 ```javascript
 let a = [1,2,3];
 let n = 2;
-stochastic.nOf(n, a);
+rndom.nOf(n, a);
 ```
 
 Description:
@@ -114,7 +114,7 @@ Returns:
 ### Color String
 Use:
 
-`stochastic.color();`
+`rndom.color();`
 
 Description:
     Generates a random web color
@@ -130,7 +130,7 @@ Returns:
 ### Coin Flip
 Use:
 
-`stochastic.coinflip();`
+`rndom.coinflip();`
 
 Description:
     Performs a fair coinflip
@@ -143,7 +143,7 @@ Use:
 
 ```javascript
 let p = 0.75;
-stochastic.weightedCoinflip(p);
+rndom.weightedCoinflip(p);
 ```
 
 Description:
