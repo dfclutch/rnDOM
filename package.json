@@ -1,0 +1,11 @@
+{
+  "name": "stochastic.js",
+  "version": "1.0.0",
+  "description": "A microlibrary for common tasks that involve randomness",
+  "main": "stochastic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Filler",
+  "license": "(MIT)"
+}
