@@ -221,4 +221,4 @@ const rndom = {
 				"YellowGreen"]
 }
 
-export default rndom;
+module.exports = rndom;
