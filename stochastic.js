@@ -37,7 +37,7 @@ exports.stochastic = {
 			}
 		}
 
-		return randomHEX();
+		return stochastic._generateHEX();
 	},
 
 	coinflip: () => {
