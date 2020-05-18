@@ -1,4 +1,4 @@
-exports.stochastic = {
+exports = {
 	between: (min, max) => {
 		return Math.random() * (max - min) + min
 	},
