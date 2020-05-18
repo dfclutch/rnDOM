@@ -56,7 +56,7 @@ const rndom = {
 		let r = rndom.intBetween(0,256),
 			g = rndom.intBetween(0,256),
 			b = rndom.intBetween(0,256);
-		return `rgb(${red},${green},${blue})`;
+		return `rgb(${r},${g},${b})`;
 	},
 	_generateHEX() {
 		let r1 = rndom._hexDigit(),
