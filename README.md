@@ -1,24 +1,24 @@
-# rndom
+# rnDOM
 
 A microlibrary for generating random data.
 
 ## Use
 #### Install
 `
-    npm install rndom
+    npm install rnDOM
 `
 
 #### Import
 ```javascript
-    let rndom = require("rndom"); //old
+    let rnDOM = require("rnDOM"); //old
     
-    import rndom from "rndom"; //ES6
+    import rnDOM from "rnDOM"; //ES6
 ```
 
 #### Generate values
 ```javascript
     // create a random value between 10 and 20
-    let myRandomNumber = rndom.between(10, 20);
+    let myRandomNumber = rnDOM.between(10, 20);
 ```
 
 ## Available Functions
@@ -38,7 +38,7 @@ Use:
 ```javascript
 let min = 10;
 let max = 20;
-rndom.between(min, max);
+rnDOM.between(min, max);
 ```
 
 Description: Generates a random float between min and max
@@ -55,7 +55,7 @@ Use:
 ```javascript
 let min = 10;
 let max = 20;
-rndom.intBetween(min, max);
+rnDOM.intBetween(min, max);
 ```
 
 
@@ -74,7 +74,7 @@ Use:
 
 ```javascript
 let a = [1,2,3];
-rndom.oneOf(a);
+rnDOM.oneOf(a);
 ```
 
 Description:
@@ -95,7 +95,7 @@ Use:
 ```javascript
 let a = [1,2,3];
 let n = 2;
-rndom.nOf(n, a);
+rnDOM.nOf(n, a);
 ```
 
 Description:
@@ -114,7 +114,7 @@ Returns:
 ### Color String
 Use:
 
-`rndom.color();`
+`rnDOM.color();`
 
 Description:
     Generates a random web color
@@ -130,7 +130,7 @@ Returns:
 ### Coin Flip
 Use:
 
-`rndom.coinflip();`
+`rnDOM.coinflip();`
 
 Description:
     Performs a fair coinflip
@@ -143,7 +143,7 @@ Use:
 
 ```javascript
 let p = 0.75;
-rndom.weightedCoinflip(p);
+rnDOM.weightedCoinflip(p);
 ```
 
 Description:
