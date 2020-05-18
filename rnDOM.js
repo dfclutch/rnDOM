@@ -1,21 +1,21 @@
-const rnDOM = {
+const rndom = {
 	between: (min, max) => {
 		return Math.random() * (max - min) + min
 	},
 
 	intBetween: (min,max) => {
-		return Math.floor(rnDOM.between(min,max))
+		return Math.floor(rndom.between(min,max))
 	},
 
 	oneOf: (a) => {
-		return a[rnDOM.intBetween(0,a.length)];
+		return a[rndom.intBetween(0,a.length)];
 	},
 
 	nOf: (n, a) => {
 		let indices = [],
 			output = [];
 		while (indices.length < n) {
-			let candidate = rnDOM.intBetween(0, a.length);
+			let candidate = rndom.intBetween(0, a.length);
 			if (!indices.includes(candidate)) {
 				indices.push(candidate);
 				output.push(a[candidate]);
@@ -29,23 +29,23 @@ const rnDOM = {
 		if (scheme) {
 			switch (scheme) {
 				case "rgb":
-					return rnDOM._generateRGB();
+					return rndom._generateRGB();
 				case "hex":
-					return rnDOM._generateHEX();
+					return rndom._generateHEX();
 				case "named":
-					return rnDOM.oneOf(rnDOM._cssColors);
+					return rndom.oneOf(rndom._cssColors);
 			}
 		}
 
-		return rnDOM._generateHEX();
+		return rndom._generateHEX();
 	},
 
 	coinflip: () => {
-		return rnDOM.between(0,1) > .5
+		return rndom.between(0,1) > .5
 	},
 	
 	weightedCoinflip: (p) => {
-		return rnDOM.between(0,1) < p;
+		return rndom.between(0,1) < p;
 	},
 	/* 
 
@@ -59,17 +59,17 @@ const rnDOM = {
 		return `rgb(${red},${green},${blue})`;
 	},
 	_generateHEX() {
-		let r1 = rnDOM._hexDigit(),
-			r2 = rnDOM._hexDigit(),
-			g1 = rnDOM._hexDigit(),
-			g2 = rnDOM._hexDigit(),
-			b1 = rnDOM._hexDigit(),
-			b2 = rnDOM._hexDigit();
+		let r1 = rndom._hexDigit(),
+			r2 = rndom._hexDigit(),
+			g1 = rndom._hexDigit(),
+			g2 = rndom._hexDigit(),
+			b1 = rndom._hexDigit(),
+			b2 = rndom._hexDigit();
 		return `#${r1}${r2}${g1}${g2}${b1}${b2}`
 	},
 	_hexDigit: () => {
 		let digits = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F",]
-		return rnDOM.oneOf(digits);
+		return rndom.oneOf(digits);
 	},
 	_cssColors:["AliceBlue",
 				"AntiqueWhite",
@@ -221,4 +221,4 @@ const rnDOM = {
 				"YellowGreen"]
 }
 
-module.exports = rnDOM;
+module.exports = rndom;

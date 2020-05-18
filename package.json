@@ -1,8 +1,8 @@
 {
-  "name": "rnDOM",
-  "version": "1.0.0",
+  "name": "rndom",
+  "version": "1.0.2",
   "description": "A microlibrary for common tasks that involve randomness",
-  "main": "rnDOM.js",
+  "main": "rndom.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dfclutch/rnDOM.git"
+    "url": "https://github.com/dfclutch/rndom.git"
   }
 }
