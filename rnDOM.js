@@ -1,6 +1,24 @@
 const rndom = {
+	/**
+	 * Generates a random float between min and max
+	 *
+	 * @param {number} min The inclusive lower bound of random range
+	 * @param {number} max The non-inclusive upper bound of random range
+	 * @returns {number}
+	 */
 	between: (min, max) => {
-		return Math.random() * (max - min) + min
+		let multiplier = Math.random();
+		let range = max - min;
+		
+		if (range === Infinity) {
+			throw new Error('Range exceeds maximum Number.');
+		}
+		
+		if(min > max) {
+			throw new Error('Min is larger than max');
+		}
+		
+		return multiplier * range + min;
 	},
 
 	intBetween: (min,max) => {

@@ -4,7 +4,7 @@
   "description": "A microlibrary for common tasks that involve randomness",
   "main": "rndom.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": {
     "name": "Dan Filler",
@@ -14,5 +14,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dfclutch/rndom.git"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
   }
 }
