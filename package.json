@@ -1,6 +1,6 @@
 {
   "name": "rndom",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A microlibrary for common tasks that involve randomness",
   "main": "rndom.js",
   "scripts": {
