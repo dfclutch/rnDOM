@@ -1,6 +1,6 @@
 # rndom
 
-A microlibrary for generating random data.
+A microlibrary for generating random data. I mostly use this for unit testing. Not to be used for security purposes as it just uses the base JS random implementations
 
 ## Use
 #### Install
