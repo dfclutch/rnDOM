@@ -1,6 +1,5 @@
 const { intBetween } = require('./numbers');
-
-const oneOf = () => { };
+const { oneOf } = require('./selectors');
 
 const hexDigit = () => {
   const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
