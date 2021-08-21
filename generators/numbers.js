@@ -6,15 +6,19 @@
  * @returns {number}
  */
 const between = (min, max) => {
+  if (typeof min !== 'number' || typeof max !== 'number') {
+    throw new Error('rndom: Interval values must be of type Number');
+  }
+
   const multiplier = Math.random();
   const range = max - min;
 
   if (range === Infinity) {
-    throw new Error('Range exceeds maximum Number.');
+    throw new Error('rndom: Range exceeds maximum Number');
   }
 
   if (min > max) {
-    throw new Error('Min is larger than max');
+    throw new Error('rndom: Min is larger than max');
   }
 
   return multiplier * range + min;
