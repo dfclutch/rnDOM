@@ -33,8 +33,6 @@ The functions available are as follows, detailed descriptions are provided below
 - `weightedCoinflip`
 
 ### Float Interval
-Use:
-
 ```javascript
 let min = 10;
 let max = 20;
@@ -50,8 +48,6 @@ Params:
 Returns: A Floating-point value in the range [min, max)
 
 ### Integer Interval
-Use:
-
 ```javascript
 let min = 10;
 let max = 20;
@@ -70,8 +66,6 @@ Returns:
     An integer value in the range [min, max)
     
 ### oneOf
-Use:
-
 ```javascript
 let a = [1,2,3];
 rndom.oneOf(a);
@@ -90,8 +84,6 @@ Returns:
     A random element that is part of a
 
 ### nOf
-Use:
-
 ```javascript
 let a = [1,2,3];
 let n = 2;
@@ -112,8 +104,6 @@ Returns:
     An array of length n where each element is in the input array a
 
 ### Color String
-Use:
-
 `rndom.color();`
 
 Description:
@@ -128,8 +118,6 @@ Returns:
     If no scheme is provided, the default is hex.
 
 ### Coin Flip
-Use:
-
 `rndom.coinflip();`
 
 Description:
@@ -139,8 +127,6 @@ Returns:
     A boolean corresponding to success or failure
 
 ### Weighted Coin Flip
-Use:
-
 ```javascript
 let p = 0.75;
 rndom.weightedCoinflip(p);
